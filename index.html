@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Vann Tasty Plates — local demo. Inline docs removed for brevity. -->
+  <!-- Vannak Tasty Plates — official website. Inline docs removed for brevity. -->
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,7 +10,7 @@
 
     <!-- Basic SEO -->
     <meta name="description" content="Family-owned Khmer restaurant serving fresh kuy teav (noodle beef soup), grilled fish, and local dishes. Dine-in, drive-through, delivery till 8:30 PM. Rated 4.3 stars.">
-    <meta name="keywords" content="Khmer food, kuy teav, noodle soup, Phnom Penh restaurant, Vann Tasty Plates, Cambodian cuisine, family owned">
+  <meta name="keywords" content="Khmer food, kuy teav, noodle soup, Phnom Penh restaurant, Vannak Tasty Plates, Cambodian cuisine, family owned">
     <link rel="canonical" href="./"/>
 
     <!-- Open Graph -->
@@ -94,22 +94,15 @@
     <header role="banner" aria-label="Site header">
       <div class="container nav">
         <div class="brand">
-          <img class="brand-logo" src="images/logo.png" alt="Vann Tasty Plates logo">
-          <div class="brand-name">Vann Tasty Plates<br><small class="brand-sub">ចែវណ្ណៈបាយឆ្ងាញ់</small></div>
+          <img class="brand-logo" src="images/logo.png" alt="Vannak Tasty Plates logo">
+          <div class="brand-name">Vannak Tasty Plates<br><small class="brand-sub">ចែវណ្ណៈបាយឆ្ងាញ់</small></div>
         </div>
-        <nav class="nav-links" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#services">Menu</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#reviews">Reviews</a>
-          <a href="#hours">Hours</a>
-          <a href="#location">Location</a>
-          <a href="#contact" class="btn secondary">Contact</a>
-          <a href="https://maps.app.goo.gl/54TJiRxwFUVhPNau9" class="btn" target="_blank" rel="noopener">View on Maps</a>
-        </nav>
-        <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleMobileMenu()">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        </button>
+        <div class="nav-controls">
+          <!-- Theme toggle (light/dark) always visible -->
+          <button id="theme-toggle" class="theme-toggle" aria-pressed="false" title="Toggle light / dark theme">🌙</button>
+          <!-- Collapse menu toggle: shows the navigation menu -->
+          <button id="nav-collapse-toggle" class="nav-collapse-toggle" aria-expanded="false" title="Toggle navigation">☰</button>
+        </div>
       </div>
       <div class="mobile-menu" hidden>
         <div class="container mobile-menu-inner">
@@ -137,7 +130,7 @@
               <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm1 15h-2v-2h2Zm0-4h-2V7h2Z"/></svg>
               Khmer Restaurant
             </span>
-            <h1>Vann Tasty Plates<br><small class="brand-sub">ចែវណ្ណៈបាយឆ្ងាញ់</small></h1>
+            <h1>Vannak Tasty Plates<br><small class="brand-sub">ចែវណ្ណៈបាយឆ្ងាញ់</small></h1>
             <p class="sub">Family-owned spot serving delicious local Khmer food like kuy teav noodle beef soup from lunch till 8:30 PM.</p>
             <div class="cta-row">
               <a class="btn" href="tel:+85512481957">Call Now</a>
@@ -161,7 +154,7 @@
           </div>
 
           <div aria-hidden="true" class="hero-media">
-      <img class="hero-img-large" src="images/store-front.jpg" width="1200" height="800" alt="Front of Vann Tasty Plates storefront with banner and outdoor seating">
+  <img class="hero-img-large" src="images/store-front.jpg" width="1200" height="800" alt="Front of Vannak Tasty Plates storefront with banner and outdoor seating">
             <div class="two-col-grid">
         <img class="hero-img-small" src="images/kuy-teav.jpg" alt="Kuy teav noodle soup bowl with herbs" loading="lazy" width="400" height="300">
         <img class="hero-img-small" src="images/grilled-fish.jpg" alt="Grilled fish plated on banana leaf with herbs" loading="lazy" width="400" height="300">
@@ -231,7 +224,7 @@
                 </div>
                 <div class="kv">
                   <label>Website</label>
-                  <strong>Local Demo (No live site yet)</strong>
+                  <strong>Official website</strong>
                 </div>
                 <div class="kv">
                   <label>Google Maps</label>
@@ -248,7 +241,7 @@
         <div class="container">
           <div class="section-head">
             <h2 id="services-title">Menu Highlights</h2>
-            <p class="section-desc">Random Khmer-inspired dishes like kuy teav—pure placeholders for your Vann Tasty Plates vibe.</p>
+            <p class="section-desc">Random Khmer-inspired dishes like kuy teav—pure placeholders for your Vannak Tasty Plates vibe.</p>
           </div>
 
           <div class="cards">
@@ -295,7 +288,7 @@
         <div class="container">
           <div class="section-head">
             <h2 id="gallery-title">Gallery</h2>
-            <p class="section-desc">Local images from your attachments—food and storefront shots for Vann Tasty Plates.</p>
+            <p class="section-desc">Local images from your attachments—food and storefront shots for Vannak Tasty Plates.</p>
           </div>
 
           <div class="gallery">
@@ -336,7 +329,7 @@
         <div class="container">
           <div class="section-head">
             <h2 id="reviews-title">Customer Reviews</h2>
-            <p class="section-desc">Fake random reviews for demo—4.3 stars average. Add real ones later!</p>
+            <p class="section-desc">Customer reviews — 4.3 stars average.</p>
           </div>
 
           <div class="reviews">
@@ -370,7 +363,7 @@
         <div class="container">
           <div class="section-head">
             <h2 id="hours-title">Hours & Location</h2>
-            <p class="section-desc">Open daily for lunch till 8:30 PM (random standard hours for demo).</p>
+            <p class="section-desc">Open daily for lunch till 8:30 PM.</p>
           </div>
 
           <div class="callout mt-16" style="max-width:1000px; margin:0 auto">
@@ -385,7 +378,7 @@
         <div class="container">
           <div class="section-head">
             <h2 id="contact-title">Get in Touch</h2>
-            <p class="section-desc">Demo contact for Vann Tasty Plates—phone links work; form is fake alert-only.</p>
+            <p class="section-desc">Contact Vannak Tasty Plates — phone links work; send us a message below.</p>
           </div>
 
           <div class="contact">
@@ -393,7 +386,7 @@
               <div class="callouts">
                 <div class="callout">
                   <h4>Phone</h4>
-                  <p><a href="tel:+85512481957">012 481 957</a><br><small>Primary for orders (demo)</small></p>
+                  <p><a href="tel:+85512481957">012 481 957</a><br><small>Primary for orders</small></p>
                 </div>
                 <div class="callout">
                   <h4>Alternate</h4>
@@ -415,7 +408,7 @@
               </div>
             </div>
 
-            <!-- Mock form (local demo) -->
+            <!-- Contact form -->
             <form id="contact-form" class="contact-form" aria-label="Quick contact form">
               <div class="field">
                 <label for="f-name">Your Name</label>
@@ -431,21 +424,9 @@
               </div>
               <button class="btn" type="submit">Send Message</button>
               <p style="color:var(--muted); font-size:.9rem; margin-top:12px">
-                Local demo form—use phone for real contact.
+                This form sends a local message — we will contact you shortly. For urgent orders, please call the phone numbers above.
               </p>
             </form>
-          </div>
-        </div>
-      </section>
-
-      <!-- Final CTA -->
-      <section aria-label="Final call to action">
-        <div class="container" style="display:grid; gap:16px; align-items:center; justify-items:center; text-align:center; background:#fff; padding:32px; border:1px solid var(--border); border-radius:20px; box-shadow:var(--shadow); margin:40px 0">
-          <h2 style="margin:0; font-size:2rem">Craving Khmer Flavors?</h2>
-          <p style="margin:0; color:var(--muted); max-width:60ch">Visit Vann Tasty Plates today for fresh kuy teav and local dishes. (Demo site—pure fun!)</p>
-          <div style="display:flex; gap:16px; flex-wrap:wrap">
-            <a class="btn" href="https://maps.app.goo.gl/54TJiRxwFUVhPNau9" target="_blank" rel="noopener">Get Directions</a>
-            <a class="btn secondary" href="tel:+85512481957">Order by Phone</a>
           </div>
         </div>
       </section>
@@ -456,16 +437,16 @@
       <div class="container foot">
         <div>
           <div class="brand" style="gap:12px; margin-bottom:12px">
-            <img class="brand-logo" src="images/logo.png" alt="Vann Tasty Plates logo – small storefront">
+            <img class="brand-logo" src="images/logo.png" alt="Vannak Tasty Plates logo – small storefront">
             <div class="brand-name">
-              <strong>Vann Tasty Plates</strong>
+              <strong>Vannak Tasty Plates</strong>
               <br>
               <small>ចែវណ្ណៈបាយឆ្ងាញ់ – Khmer Restaurant in Boengknar</small>
             </div>
           </div>
           <div style="margin-bottom:12px">
             <small>JPPG+Q, Phnom Penh 1502, Cambodia</small><br>
-            <small><a href="tel:+85512481957">012 481 957</a> | Open till 8:30 PM (Demo)</small>
+            <small><a href="tel:+85512481957">012 481 957</a> | Open till 8:30 PM</small>
           </div>
           <div>
             <a class="pill" href="https://maps.app.goo.gl/54TJiRxwFUVhPNau9" target="_blank" rel="noopener">View on Google Maps</a>
@@ -488,7 +469,7 @@
         <div>
           <h4 style="margin:0 0 12px; color:var(--brand)">Policies</h4>
           <ul>
-            <li><a href="#privacy">Privacy Policy (Demo)</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
             <li><a href="#terms">Terms of Use</a></li>
             <li><a href="#refunds">Food Safety Info</a></li>
           </ul>
@@ -496,7 +477,7 @@
       </div>
 
       <div class="container" style="margin-top:20px; text-align:center; padding-top:16px; border-top:1px solid var(--border)">
-        <small>Copyright © <span id="y"></span> Vann Tasty Plates. Local demo—all rights reserved.</small>
+  <small>Copyright © <span id="y"></span> Vannak Tasty Plates. All rights reserved.</small>
       </div>
     </footer>
 

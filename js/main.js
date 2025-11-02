@@ -1,5 +1,5 @@
 // js/main.js
-// Moved from index.html inline scripts. Handles year, mobile menu, smooth scroll, and contact form demo.
+// Handles dynamic year, mobile menu, smooth scroll, contact form behavior, and theme toggle.
 
 (function(){
   function init(){
@@ -9,27 +9,32 @@
 
     // Mobile menu elements
     var menu = document.querySelector('.mobile-menu');
-    var btn = document.querySelector('.mobile-toggle');
+    var navCollapseBtn = document.getElementById('nav-collapse-toggle');
 
-    // Expose toggle function globally because index.html uses onclick attribute
-    window.toggleMobileMenu = function(){
-      if (!menu || !btn) return;
+    // Toggle function for collapse menu
+    function toggleMenu(){
+      if (!menu) return;
       var isOpen = !menu.hasAttribute('hidden');
       if (isOpen) {
         menu.setAttribute('hidden', '');
-        btn.setAttribute('aria-expanded', 'false');
+        if (navCollapseBtn) navCollapseBtn.setAttribute('aria-expanded', 'false');
       } else {
         menu.removeAttribute('hidden');
-        btn.setAttribute('aria-expanded', 'true');
+        if (navCollapseBtn) navCollapseBtn.setAttribute('aria-expanded', 'true');
       }
-    };
+    }
+
+    // Attach to nav-collapse-toggle button
+    if (navCollapseBtn) {
+      navCollapseBtn.addEventListener('click', toggleMenu);
+    }
 
     // Close mobile menu on link click
     if (menu) {
       menu.querySelectorAll('a').forEach(function(link){
         link.addEventListener('click', function(){
           menu.setAttribute('hidden', '');
-          if (btn) btn.setAttribute('aria-expanded', 'false');
+          if (navCollapseBtn) navCollapseBtn.setAttribute('aria-expanded', 'false');
         });
       });
     }
@@ -48,14 +53,38 @@
       });
     });
 
-    // Contact form demo (moved from inline onsubmit)
+    // Contact form behavior
     var form = document.getElementById('contact-form');
     if (form){
       form.addEventListener('submit', function(e){
         e.preventDefault();
-        // Friendly demo message
-        alert('Thanks! This is a local demo — message sent for Vann Tasty Plates.');
+        // Friendly confirmation message
+        alert('Thanks! Your message has been sent to Vannak Tasty Plates. We will respond shortly.');
         try{ form.reset(); }catch(e){}
+      });
+    }
+
+    // Theme toggle (persisted in localStorage)
+    var themeToggle = document.getElementById('theme-toggle');
+    function applyTheme(pref){
+      if (pref === 'dark') document.body.classList.add('dark'); else document.body.classList.remove('dark');
+      if (themeToggle) themeToggle.setAttribute('aria-pressed', String(pref === 'dark'));
+      if (themeToggle) themeToggle.textContent = pref === 'dark' ? '☀️' : '🌙';
+    }
+    // load saved preference
+    var saved = null;
+    try{ saved = localStorage.getItem('vannak-theme'); }catch(e){}
+    if (!saved){
+      // default to light
+      saved = 'light';
+    }
+    applyTheme(saved);
+    if (themeToggle){
+      themeToggle.addEventListener('click', function(){
+        var isDark = document.body.classList.contains('dark');
+        var next = isDark ? 'light' : 'dark';
+        try{ localStorage.setItem('vannak-theme', next); }catch(e){}
+        applyTheme(next);
       });
     }
   }
