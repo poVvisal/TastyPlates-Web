@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Vann Tasty Plates — local demo. Inline docs removed for brevity. -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Vannak Tasty Plates –អាហារដ្ធានវណ្ណៈ – Delicious Khmer Noodle Soup & Local Eats</title>
+
+    <!-- Basic SEO -->
+    <meta name="description" content="Family-owned Khmer restaurant serving fresh kuy teav (noodle beef soup), grilled fish, and local dishes. Dine-in, drive-through, delivery till 8:30 PM. Rated 4.3 stars.">
+    <meta name="keywords" content="Khmer food, kuy teav, noodle soup, Phnom Penh restaurant, Vann Tasty Plates, Cambodian cuisine, family owned">
+    <link rel="canonical" href="./"/>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="restaurant">
+    <meta property="og:title" content="Vannak Tasty Plates – ចែវណ្ណៈបាយឆ្ងាញ់">
+    <meta property="og:description" content="Enjoy authentic Khmer flavors like noodle beef soup at our family-run spot. Open for lunch till 8:30 PM.">
+    <meta property="og:url" content="./">
+  <meta property="og:image" content="images/store-front.jpg">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vannak Tasty Plates – ចែវណ្ណៈបាយឆ្ងាញ់">
+    <meta name="twitter:description" content="Family-owned Khmer eats: kuy teav, soups, and more. 4.3 stars!">
+  <meta name="twitter:image" content="images/store-front.jpg">
+
+    <!-- Favicons (optional; add your own files or skip) -->
+    <link rel="icon" href="./favicon.ico" />
+
+    <!-- Styles moved to external stylesheet for performance and maintainability -->
+    <link rel="stylesheet" href="css/styles.css">
+  <!-- Khmer webfont (Noto Sans Khmer) for consistent Khmer rendering -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- LocalBusiness schema (restaurant-specific, local paths) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Vannak Tasty Plates",
+  "alternateName": "ចែវណ្ណៈបាយឆ្ងាញ់",
+        "image": [
+        "images/store-front.jpg",
+        "images/kuy-teav.jpg"
+      ],
+      "@id": "./",
+      "url": "./",
+  "telephone": "+855 12 481 957",
+      "priceRange": "$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "JPPG+Q",
+        "addressLocality": "Phnom Penh",
+        "addressRegion": "Phnom Penh",
+        "postalCode": "1502",
+        "addressCountry": "KH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 11.5564,
+        "longitude": 104.9282
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "11:00",
+          "closes": "20:30"
+        }
+      ],
+      "servesCuisine": "Cambodian",
+      "currenciesAccepted": "KHR, USD",
+      "paymentAccepted": "Cash, Mobile Pay",
+      "sameAs": ["https://maps.app.goo.gl/54TJiRxwFUVhPNau9"]
+    }
+    </script>
+  </head>
+
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- Header / Nav -->
+    <header role="banner" aria-label="Site header">
+      <div class="container nav">
+        <div class="brand">
+          <img class="brand-logo" src="images/logo.png" alt="Vann Tasty Plates logo">
+          <div class="brand-name">Vann Tasty Plates<br><small class="brand-sub">ចែវណ្ណៈបាយឆ្ងាញ់</small></div>
+        </div>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#services">Menu</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#hours">Hours</a>
+          <a href="#location">Location</a>
+          <a href="#contact" class="btn secondary">Contact</a>
+          <a href="https://maps.app.goo.gl/54TJiRxwFUVhPNau9" class="btn" target="_blank" rel="noopener">View on Maps</a>
+        </nav>
+        <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleMobileMenu()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="mobile-menu" hidden>
+        <div class="container mobile-menu-inner">
+          <div class="mobile-menu-grid">
+            <a href="#about">About</a>
+            <a href="#services">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#hours">Hours</a>
+            <a href="#location">Location</a>
+            <a href="#contact">Contact</a>
+            <a href="https://maps.app.goo.gl/54TJiRxwFUVhPNau9" target="_blank" rel="noopener" class="btn">View on Maps</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+
+      <!-- Hero -->
+      <section class="hero" aria-label="Welcome section">
+        <div class="container hero-inner">
+          <div class="hero-card">
+            <span class="eyebrow">
+              <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm1 15h-2v-2h2Zm0-4h-2V7h2Z"/></svg>
+              Khmer Restaurant
+            </span>
+            <h1>Vann Tasty Plates<br><small class="brand-sub">ចែវណ្ណៈបាយឆ្ងាញ់</small></h1>
+            <p class="sub">Family-owned spot serving delicious local Khmer food like kuy teav noodle beef soup from lunch till 8:30 PM.</p>
+            <div class="cta-row">
+              <a class="btn" href="tel:+85512481957">Call Now</a>
+              <a class="btn secondary" href="https://maps.app.goo.gl/54TJiRxwFUVhPNau9" target="_blank" rel="noopener">Directions</a>
+            </div>
+
+            <div class="hero-badge" aria-label="Key details">
+              <div class="badge">
+                <strong>Open Now</strong>
+                <span>Closes at 8:30 PM</span>
+              </div>
+              <div class="badge">
+                <strong>4.3 ★</strong>
+                <span>(11 reviews)</span>
+              </div>
+              <div class="badge">
+                <strong>Price</strong>
+                <span>$ (Affordable)</span>
+              </div>
+            </div>
+          </div>
+
+          <div aria-hidden="true" class="hero-media">
+      <img class="hero-img-large" src="images/store-front.jpg" width="1200" height="800" alt="Front of Vann Tasty Plates storefront with banner and outdoor seating">
+            <div class="two-col-grid">
+        <img class="hero-img-small" src="images/kuy-teav.jpg" alt="Kuy teav noodle soup bowl with herbs" loading="lazy" width="400" height="300">
+        <img class="hero-img-small" src="images/grilled-fish.jpg" alt="Grilled fish plated on banana leaf with herbs" loading="lazy" width="400" height="300">
+            </div>
+          </div>
+        </div>
+
+        <div class="container highlights">
+          <article class="highlight">
+            <h3>Family Owned</h3>
+            <p>Authentic Khmer recipes passed down generations.</p>
+          </article>
+          <article class="highlight">
+            <h3>Fresh Daily</h3>
+            <p>Cooked local dishes like noodle soup made to order.</p>
+          </article>
+          <article class="highlight">
+            <h3>Convenient</h3>
+            <p>Dine-in, drive-through, or delivery options available.</p>
+          </article>
+          <article class="highlight">
+            <h3>Highly Rated</h3>
+            <p>4.3 stars from 11 happy customers.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="about-title">About Us</h2>
+            <p class="section-desc">A cozy family-owned food shop in Phnom Penh, specializing in delicious cooked local Khmer food from lunch till 8:30 PM.</p>
+          </div>
+          <div class="about">
+            <article class="about-card">
+              <p>At Vannak Tasty Plates (ចែវណ្ណៈបាយឆ្ងាញ់), we’re passionate about serving authentic Khmer cuisine. Our menu highlights fresh noodle beef soup (kuy teav) and other traditional dishes, all prepared with love in a welcoming atmosphere. Come enjoy the flavors of Cambodia with dine-in, drive-through, or delivery.</p>
+              <div class="info-grid mt-16">
+                <div class="kv">
+                  <label>Category</label>
+                  <strong>Khmer Restaurant</strong>
+                </div>
+                <div class="kv">
+                  <label>Service Options</label>
+                  <strong>Dine-in, Drive-through, Delivery</strong>
+                </div>
+                <div class="kv">
+                  <label>Cuisine</label>
+                  <strong>Cambodian / Khmer</strong>
+                </div>
+                <div class="kv">
+                  <label>Highlights</label>
+                  <strong>Noodle with soup</strong>
+                </div>
+              </div>
+            </article>
+
+            <aside class="info-card" aria-label="Business quick facts">
+              <div class="info-grid">
+                <div class="kv">
+                  <label>Phone</label>
+                  <strong><a href="tel:+85512481957">012 481 957</a><br><small>or 086 367 617</small></strong>
+                </div>
+                <div class="kv">
+                  <label>Address</label>
+                  <strong>JPPG+Q, Phnom Penh 1502<br>Cambodia</strong>
+                </div>
+                <div class="kv">
+                  <label>Website</label>
+                  <strong>Local Demo (No live site yet)</strong>
+                </div>
+                <div class="kv">
+                  <label>Google Maps</label>
+                  <strong><a href="https://maps.app.goo.gl/54TJiRxwFUVhPNau9" target="_blank" rel="noopener">Open listing</a></strong>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu (Random placeholders) -->
+  <section id="services" aria-labelledby="services-title" class="bg-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="services-title">Menu Highlights</h2>
+            <p class="section-desc">Random Khmer-inspired dishes like kuy teav—pure placeholders for your Vann Tasty Plates vibe.</p>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+        <img src="images/kuy-teav.jpg" alt="Kuy teav noodle beef soup in bowl with herbs" loading="lazy" width="600" height="400">
+              <div class="card-body">
+                <div class="pill">Soup</div>
+                <h3>Kuy Teav (Noodle Beef Soup)</h3>
+                <p>Classic Khmer noodle soup with beef, herbs, and fresh veggies. Random price: $3.</p>
+              </div>
+            </article>
+
+            <article class="card">
+        <img src="images/grilled-fish.jpg" alt="Grilled fish on banana leaf with sauce" loading="lazy" width="600" height="400">
+              <div class="card-body">
+                <div class="pill">Grilled</div>
+                <h3>Grilled Fish Pla</h3>
+                <p>Tender fish grilled to perfection, served with banana leaf and spicy dip. Random: $5.</p>
+              </div>
+            </article>
+
+            <article class="card">
+        <img src="images/vegetable-hot-pot.jpg" alt="Vegetable hot pot with mushrooms and lemongrass" loading="lazy" width="600" height="400">
+              <div class="card-body">
+                <div class="pill">Soup</div>
+                <h3>Vegetable Hot Pot</h3>
+                <p>Flavorful broth with mushrooms, lemon grass, and local greens. Random: $2.50.</p>
+              </div>
+            </article>
+
+            <article class="card card--full">
+        <img src="images/full-meal.jpg" alt="Assorted Khmer plates and soups" loading="lazy" width="900" height="600">
+              <div class="card-body text-center">
+                <h3>More Random Khmer Dishes</h3>
+                <p>From stir-fries to soups—mix and match for lunch specials!</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery" aria-labelledby="gallery-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="gallery-title">Gallery</h2>
+            <p class="section-desc">Local images from your attachments—food and storefront shots for Vann Tasty Plates.</p>
+          </div>
+
+          <div class="gallery">
+            <figure class="gallery-landscape">
+              <img src="images/store-front.jpg" alt="Outdoor storefront with banner and seating" loading="lazy">
+              <div class="overlay-badge" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false" style="margin-right:6px;vertical-align:middle"><path d="M12 2v10l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Open Now
+              </div>
+              <figcaption class="landscape-caption">Storefront Vibes — Open daily</figcaption>
+            </figure>
+
+            <figure>
+              <img src="images/kuy-teav.jpg" alt="Noodle soup close-up with herbs and toppings" loading="lazy">
+              <figcaption>Kuy Teav Delight</figcaption>
+            </figure>
+
+            <figure>
+              <img src="images/grilled-fish.jpg" alt="Grilled fish platter on banana leaf" loading="lazy">
+              <figcaption>Grilled Fish Special</figcaption>
+            </figure>
+
+            <figure>
+              <img src="images/vegetable-hot-pot.jpg" alt="Steaming vegetable soup bowl with lemongrass" loading="lazy">
+              <figcaption>Fresh Soup Bowl</figcaption>
+            </figure>
+
+            <figure>
+              <img src="images/full-meal.jpg" alt="Full plate setup with soup and sides" loading="lazy">
+              <figcaption>Complete Meal</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews (Random) -->
+  <section id="reviews" aria-labelledby="reviews-title" class="bg-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="reviews-title">Customer Reviews</h2>
+            <p class="section-desc">Fake random reviews for demo—4.3 stars average. Add real ones later!</p>
+          </div>
+
+          <div class="reviews">
+            <blockquote class="review">
+              <div class="stars">★★★★☆</div>
+              <p>"Great kuy teav—fresh and flavorful! Family-friendly spot."</p>
+              <small>— Local Diner, Oct 2025</small>
+            </blockquote>
+
+            <blockquote class="review">
+              <div class="stars">★★★★★</div>
+              <p>"The grilled fish was amazing. Quick service and affordable."</p>
+              <small>— Foodie Fan, Sep 2025</small>
+            </blockquote>
+
+            <blockquote class="review">
+              <div class="stars">★★★★☆</div>
+              <p>"Love the noodle soup here. Perfect for lunch in Phnom Penh."</p>
+              <small>— Khmer Cuisine Lover, Aug 2025</small>
+            </blockquote>
+          </div>
+
+          <div class="mt-20 text-center">
+            <a class="btn" href="https://maps.app.goo.gl/54TJiRxwFUVhPNau9" target="_blank" rel="noopener">See Real Reviews on Google Maps</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hours + Location -->
+      <section id="hours" aria-labelledby="hours-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="hours-title">Hours & Location</h2>
+            <p class="section-desc">Open daily for lunch till 8:30 PM (random standard hours for demo).</p>
+          </div>
+
+          <div class="callout mt-16" style="max-width:1000px; margin:0 auto">
+            <p class="muted-text">We are open every day, including public holidays; if we must close unexpectedly we will notify our customers promptly. For the latest updates please call <a href="tel:+85512481957">012 481 957</a>.</p>
+            <p class="muted-text" style="margin-top:8px">Pop in for kuy teav, friendly service, and big smiles — or ring ahead if you prefer to be extra sure.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+  <section id="contact" aria-labelledby="contact-title" class="bg-alt">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="contact-title">Get in Touch</h2>
+            <p class="section-desc">Demo contact for Vann Tasty Plates—phone links work; form is fake alert-only.</p>
+          </div>
+
+          <div class="contact">
+            <div>
+              <div class="callouts">
+                <div class="callout">
+                  <h4>Phone</h4>
+                  <p><a href="tel:+85512481957">012 481 957</a><br><small>Primary for orders (demo)</small></p>
+                </div>
+                <div class="callout">
+                  <h4>Alternate</h4>
+                  <p><a href="tel:+85586367617">086 367 617</a><br><small>For inquiries</small></p>
+                </div>
+                <div class="callout">
+                  <h4>Delivery</h4>
+                  <p>Available via drive-through or apps (random placeholder).</p>
+                </div>
+                <div class="callout">
+                  <h4>Location</h4>
+                  <p><a href="https://maps.app.goo.gl/54TJiRxwFUVhPNau9" target="_blank" rel="noopener">JPPG+Q, Phnom Penh</a></p>
+                </div>
+              </div>
+
+              <div class="callout mt-16">
+                <h4>Quick Tip</h4>
+                <p>Call during open hours (7:00 AM - 8:30 PM) for the best response on dishes.</p>
+              </div>
+            </div>
+
+            <!-- Mock form (local demo) -->
+            <form id="contact-form" class="contact-form" aria-label="Quick contact form">
+              <div class="field">
+                <label for="f-name">Your Name</label>
+                <input id="f-name" name="name" type="text" placeholder="Enter your name" required>
+              </div>
+              <div class="field">
+                <label for="f-phone">Phone</label>
+                <input id="f-phone" name="phone" type="tel" placeholder="+855 12 ..." inputmode="tel" required>
+              </div>
+              <div class="field">
+                <label for="f-msg">Message</label>
+                <textarea id="f-msg" name="message" rows="4" placeholder="Order inquiry or question about kuy teav?" required></textarea>
+              </div>
+              <button class="btn" type="submit">Send Message</button>
+              <p style="color:var(--muted); font-size:.9rem; margin-top:12px">
+                Local demo form—use phone for real contact.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section aria-label="Final call to action">
+        <div class="container" style="display:grid; gap:16px; align-items:center; justify-items:center; text-align:center; background:#fff; padding:32px; border:1px solid var(--border); border-radius:20px; box-shadow:var(--shadow); margin:40px 0">
+          <h2 style="margin:0; font-size:2rem">Craving Khmer Flavors?</h2>
+          <p style="margin:0; color:var(--muted); max-width:60ch">Visit Vann Tasty Plates today for fresh kuy teav and local dishes. (Demo site—pure fun!)</p>
+          <div style="display:flex; gap:16px; flex-wrap:wrap">
+            <a class="btn" href="https://maps.app.goo.gl/54TJiRxwFUVhPNau9" target="_blank" rel="noopener">Get Directions</a>
+            <a class="btn secondary" href="tel:+85512481957">Order by Phone</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <div class="container foot">
+        <div>
+          <div class="brand" style="gap:12px; margin-bottom:12px">
+            <img class="brand-logo" src="images/logo.png" alt="Vann Tasty Plates logo – small storefront">
+            <div class="brand-name">
+              <strong>Vann Tasty Plates</strong>
+              <br>
+              <small>ចែវណ្ណៈបាយឆ្ងាញ់ – Khmer Restaurant in Boengknar</small>
+            </div>
+          </div>
+          <div style="margin-bottom:12px">
+            <small>JPPG+Q, Phnom Penh 1502, Cambodia</small><br>
+            <small><a href="tel:+85512481957">012 481 957</a> | Open till 8:30 PM (Demo)</small>
+          </div>
+          <div>
+            <a class="pill" href="https://maps.app.goo.gl/54TJiRxwFUVhPNau9" target="_blank" rel="noopener">View on Google Maps</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="margin:0 0 12px; color:var(--brand)">Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#hours">Hours</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="margin:0 0 12px; color:var(--brand)">Policies</h4>
+          <ul>
+            <li><a href="#privacy">Privacy Policy (Demo)</a></li>
+            <li><a href="#terms">Terms of Use</a></li>
+            <li><a href="#refunds">Food Safety Info</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container" style="margin-top:20px; text-align:center; padding-top:16px; border-top:1px solid var(--border)">
+        <small>Copyright © <span id="y"></span> Vann Tasty Plates. Local demo—all rights reserved.</small>
+      </div>
+    </footer>
+
+    <!-- External JS (moved from inline) -->
+    <script src="js/main.js" defer></script>
+
+  </body>
+</html>
