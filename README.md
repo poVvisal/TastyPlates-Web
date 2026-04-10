@@ -19,3 +19,50 @@ If you included the optional image resizing script, run it to generate responsiv
 Notes:
 - This is a static site. If you update CSS or JS, refresh the page. Use DevTools to inspect layout/mobile behavior.
 - The contact form currently shows a confirmation alert and does not submit to a backend. If you want a live form, I can wire a simple server endpoint or integrate a third-party form provider.
+
+Docker (port 80):
+1. Build the image:
+
+```powershell
+docker build -t tastyplates-web .
+```
+
+2. Run the container on port 80:
+
+```powershell
+docker run --rm -p 80:80 --name tastyplates tastyplates-web
+```
+
+3. Open `http://localhost/` in your browser.
+
+Update on Linux VM (replace existing deployment):
+1. Stop and remove old container if it exists:
+
+```bash
+docker stop tastyplates || true
+docker rm tastyplates || true
+```
+
+2. Remove old image (optional but keeps things clean):
+
+```bash
+docker rmi tastyplates-web || true
+```
+
+3. Build latest image:
+
+```bash
+docker build -t tastyplates-web .
+```
+
+4. Run updated container on port 80:
+
+```bash
+docker run -d --restart unless-stopped -p 80:80 --name tastyplates tastyplates-web
+```
+
+5. Verify it is running:
+
+```bash
+docker ps
+```
